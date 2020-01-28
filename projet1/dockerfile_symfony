@@ -1,0 +1,21 @@
+FROM php:apache
+
+ENV PHP_APCU_VERSION 4.0.11
+ENV PHP_XDEBUG_VERSION 2.4.0
+RUN apt-get update \
+    && apt-get install -y \
+        libicu-dev \
+        zlib1g-dev \
+    && docker-php-source extract
+
+
+RUN docker-php-ext-install \
+        apcu \
+        intl \
+        mbstring \
+        mysqli \
+        xdebug \
+        zip \
+    && docker-php-source delete \
+    && php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/local/bin --filename=composer \
+    && chmod +x /usr/local/bin/composer

@@ -1,0 +1,141 @@
+@media all and (max-width: 1750px)
+{
+	ul.img-list
+	{
+		width: 900px;
+		margin: auto;
+		margin-top: 15px;
+	}
+}
+
+@media all and (max-width: 1500px)
+{
+	#services img:only-of-type
+	{
+		margin-left: 5%;
+	}
+
+	#nav-services ul
+	{
+		float: right;
+	}
+}
+
+@media all and (max-width: 1300px)
+{
+	#services img:only-of-type
+	{
+		margin-left: -6%;
+	}
+
+	header img
+	{
+		margin: 20px 0 20px 100px;
+	}
+}
+
+@media all and (max-width: 1200px)
+{
+	#services img:only-of-type
+	{
+		width: 630px;
+		margin-left: -9%;
+	}
+}
+
+
+@media all and (max-width: 1024px)
+{
+	header
+	{
+		margin-top: -140px;
+		padding: 15px 0 10px 0;
+	}
+
+	header img
+	{
+		margin: 0px 0 0 10px;
+	}
+
+	nav ul
+	{
+		margin: -55px 0 0 300px;
+	}
+
+	#slideshow,
+	#content,
+	img[src="left-arrow.png"],
+	img[src="right-arrow.png"],
+	#services img:only-of-type,
+	img[src="images/carte1.png"],
+	#section-accueil
+	{
+		display: none;
+	}
+
+	h2
+	{
+		font-size: 1.5em;
+    	margin: auto;
+    	margin-top: 140px;
+	}
+
+	section#services
+	{
+		height: 200px;
+	}
+
+	.underline
+	{
+		margin-top: 30px;
+	}
+
+	h2 + p
+	{
+		margin: auto;
+		margin-top: 45px;
+	}
+
+	#nav-services ul
+	{
+		margin: 35px 160px 0 0;
+    	height: 200px;
+	}
+
+	section#portfolio
+	{
+		margin-top: 380px;
+	}
+
+	#nav-projets ul 
+	{
+		margin-top: 15px;
+	}
+
+	ul.img-list 
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contact
+	{
+		margin-left: -29%;
+	    margin-top: 700px;    	
+	    background-color: rgba(228, 228, 228, 0.7);
+	}
+}
+
+@media all and (max-width: 900px)
+{
+	header img
+	{
+		display: none;
+	}
+
+	nav ul
+	{
+		margin: 0 0 0 300px;
+	}
+}

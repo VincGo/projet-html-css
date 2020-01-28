@@ -1,0 +1,447 @@
+body
+{
+	font-family: 'arial';
+	margin: 0;
+  height: 3000px;
+}
+
+#block-page
+{
+  height: 400px;
+}
+
+header
+{
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+}
+
+/* logo webagency */
+header img
+{
+  margin: 20px 0 20px 200px;
+}
+
+/* positionnement navigation */
+
+nav
+{
+  margin-right: 10%;
+}
+nav ul
+{
+	list-style-type: none;
+  display: flex;
+  height: 30px;
+  margin: -60px 0px 20px 0;
+  float: right;
+}
+
+/* style navigation */
+nav li
+{
+	margin-right: 30px;
+	font-size: 1.3em;
+	width: 100px;
+	position: relative;	
+}
+
+nav li:hover
+{
+	border-top: 1px overline;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: black;
+}
+
+/* trait bleu au-dessus navigation */
+nav li:after
+{
+	content: '';
+	position: absolute;
+	width:0px;
+	height:3px;
+	left:50%;
+	right:50%;
+	transition:all 200ms linear;
+	margin-top: -41px;
+}
+
+nav li:hover:after
+{
+	background-color:rgba(0,102,255,1);
+	width:95px;
+	left:-10px;
+}
+
+/* slide 2 images */
+#slideshow
+{
+  overflow: hidden;
+}
+
+#slideshow figure img
+{
+  width: 50%;
+  float: left;
+  height: 700px;
+}
+
+#slideshow figure
+{
+  position: relative;
+  width: 200%;
+  margin: 0;
+  left: 0;
+  transition: 2s;
+}
+
+#slideshow:target #content
+{
+  left:-100%;
+}
+
+/* flèche slide */
+img[src="left-arrow.png"]
+{
+  position: relative;
+  bottom: 300px;
+}
+
+img[src="right-arrow.png"]
+{
+	position: relative;
+  bottom: 300px;  
+  float: right;
+}
+
+/* couleur webagency */
+span
+{
+	color: rgb(47, 170, 199);
+}
+
+/* block sur slide */
+#section-accueil 
+{
+    width: 550px;
+    font-size: 1.3em;
+    position: relative;
+    bottom: 460px;
+    left: 17%;
+    color: white;
+}
+
+/* texte sur slide */
+h1 + p
+{
+	padding-bottom: 40px;
+  width: 700px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* style plus d'info slide */
+#button-info
+{
+	background-color: rgb(47, 170, 199);
+	width: 140px;
+  height: 35px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+#button-info a 
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* titre nos services nos projets  */
+h2
+{
+	text-align: center;
+	margin-top: -150px;
+	font-size: 2.5em;
+}
+
+/* style sous titre */
+.underline
+{
+	width: 15px;
+	height: 15px;
+	background-color: rgb(47, 170, 199);
+	margin: auto;
+  margin-top: 10px;
+	border-radius: 100%;
+	position: relative;
+  bottom: 20px;
+}
+
+.underline:after
+{
+	content: "";
+	border-top: 1px solid;
+	color: rgb(200, 200, 200);
+	width: 50px;
+	position: absolute;
+	top: 8px;
+  left: 20px;
+}
+
+.underline:before
+{
+	content: "";
+	border-top: 1px solid;
+	color: rgb(200, 200, 200);
+	width: 50px;
+	position: absolute;
+	top: 8px;
+  left: -57px;
+}
+
+/* texte sous titre */
+.underline + p
+{
+	text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+/* image services */
+#services img:only-of-type
+{
+	margin-left: 11%;
+  margin-top: 100px;
+  width: 750px;
+  transition-duration: 1.5s;
+}
+
+#services img:only-of-type:hover
+{
+  transform: rotate(360deg);
+}
+
+/* block services */
+#nav-services ul
+{
+  width: 580px;
+  margin: -370px 0 0 55%;
+  list-style-type: none;
+}
+
+.fa
+{
+	color: rgb(47, 170, 199);
+  float: left;
+  width: 28px;
+  margin: -5px 30px 0 0;
+}
+
+.fa.fa-line-chart,
+.fa.fa-cubes,
+.fa.fa-pie-chart
+{
+  font-size:24px;
+  margin: -8px 0 0 -2px;
+}
+
+#nav-services p
+{
+  margin: 0 0 0 55px;
+}
+
+.deco-services
+{
+	  width: 10px;
+    height: 10px;
+    background-color: rgb(47, 170, 199);
+    border-radius: 100%;
+    position: relative;
+    top: 8px;
+    left: 33px;
+   
+}
+
+.deco-services:after
+{	
+	content: "";
+  border: 1px solid;
+  color: rgb(200, 200, 200);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 82px; 
+  margin: -19px 0 0 -46px;
+}
+
+h3
+{
+	margin: 40px 0 0 55px ;
+}
+
+/* barre navigation projets */
+section#portfolio
+{
+	margin-top: 300px;
+}
+
+#nav-projets ul
+{
+  width: 334px;
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  background-color: rgb(232, 232, 232);
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 0;
+
+}
+
+#nav-projets li
+{
+    padding: 10px 10px 0 10px;  
+}
+
+#nav-projets a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#nav-projets li:hover
+{
+	background-color: aqua;
+}
+
+#nav-projets a:hover
+{
+	color: white;
+}
+
+
+/* triangle sous nav-projets */
+#nav-projets li.active a:after,
+#nav-projets li a:hover:after
+{
+	content: "";
+	display: block;
+	width: 0;
+	border: 10px solid aqua;
+	border-color: aqua transparent transparent transparent;
+  margin: 12px 0 0 25px;
+}
+
+/* mosaïques images projets */
+ul.img-list li img 
+{
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+}
+
+/* hover img */
+.img-list ul
+{
+  list-style-type: none;
+  text-align: center;
+  margin-left: 50px;
+  display: flex;
+}
+
+.img-list li 
+{
+  display: inline-block;
+  position: relative;
+}
+
+span.text-content  
+{
+  background: rgba(0,0,0,0.5);
+  color: white;
+  height: 95px;
+  width: 380px;
+  position: absolute;
+  left: 10px;
+  bottom: 14px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+  padding: 10px;
+  order: 1;
+
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+.fa.fa-eye
+{
+	  color: white;
+    padding: 4px 0 0 5px;
+    order: 2;
+    margin: -27px 0 0 333px;
+    font-size: 25px
+}
+
+.fa-eye
+{
+	  width: 29px;
+    height: 29px;
+    border-radius: 20px;
+    background-color: rgb(47, 170, 199);
+    border: solid 2px white;
+}
+
+/* formulaire contact */
+#contact
+{
+	width: 315px;
+  background-color: rgba(250, 250, 250, 0.7);
+  padding: 15px;
+  position: relative;
+  bottom: 640px;
+  left: 64%;
+}
+
+textarea
+{
+	  width: 307px;
+    height: 200px;
+    margin: 15px 0 10px 0;
+}
+
+input
+{
+	margin-top: 15px;
+}
+
+/* fond carte google */
+img[src="images/carte1.png"]
+{
+    height: 700px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+input[name="btn"]
+{
+  background-color: rgb(47, 170, 199);
+  width: 140px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
